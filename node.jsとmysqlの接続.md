@@ -11,7 +11,7 @@ const connection = mysql.createConnection({
     //データベース名、パスワードなど入れる
 });
 
-## クエリの実行
+## クエリの実行 
 connection.query('クエリ', クエリ実行後の処理)と書くことで、Node.jsからデータベースに対してクエリを実行することができます。
 
 const connection = mysql.createConnection({                        
@@ -85,3 +85,8 @@ app.post("/create",(req,res)=>{
 リダイレクトを使う場面はいくつかありますが、よくあるのは今回のようにpostメソッドでリクエストした時です。こういう時はres.renderではなくres.redirectを使って、getのルーティングにリダイレクトしてあげましょう。
 
 res.redirect("/url")
+
+
+git add .
+git commit -m "commit tests"
+git push
